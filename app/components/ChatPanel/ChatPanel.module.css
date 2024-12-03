@@ -1,0 +1,42 @@
+.chat_panel {
+    flex: 0 0 auto;
+    border-top: 1px solid var(--light-border-color);
+    background-color: var(--primary-invert-text-color);
+}
+
+.chat_panel_send {
+    display: flex;
+}
+
+.chat_panel_message {
+    border: 0;
+    resize: none;
+    width: 100%;
+    padding: var(--spacing-l);
+    font-size: var(--font-size-base);
+    font-family: inherit;
+    line-height: 1.4;
+}
+
+.chat_panel_message:focus {
+    outline: 0;
+}
+
+.chat_panel_action {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: var(--spacing-base);
+    line-height: 1;
+}
+
+.chat_panel_icon {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+.chat_panel_disclaimer {
+    padding: var(--spacing-s) var(--spacing-l) 0;
+    font-size: var(--font-size-sm);
+}
