@@ -1,0 +1,62 @@
+.wta {
+  padding-top: var(--spacing-3xl);
+}
+
+.wta_title,
+.wta_subtitle {
+  text-align: center;
+  margin: 0;
+}
+
+.wta_title {
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+}
+
+.wta_subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-l);
+  position: relative;
+  padding-bottom: var(--spacing-3xl);
+}
+
+.wta_subtitle:before,
+.wta_subtitle:after {
+  content: " ";
+  display: inline-block;
+  border-top: 1px solid var(--primary-color);
+  width: 70px;
+}
+
+.wta_suggested_questions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l)
+}
+
+.wta_suggested_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  font: inherit;
+  text-align: left;
+  margin: 0;
+  border-radius: 5px;
+  padding: var(--spacing-base);
+  background-color: var(--primary-light-color);
+  cursor: pointer;
+}
+
+.wta_suggested_question:after {
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  flex: 0 0 20px;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='20px' viewBox='0 -960 960 960' width='20px' fill='%235f6368'%3E%3Cpath d='m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z'/%3E%3C/svg%3E");
+  background-size: cover;
+}
