@@ -1,0 +1,39 @@
+.loader {
+  display: flex;
+  gap: 5px;
+  padding: var(--spacing-xl);
+}
+
+.dot_loader {
+  display: flex;
+  gap: 5px;
+}
+
+.loader_dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color);
+}
+
+.loader_dot_one {
+  animation: bouncing 0.3s infinite alternate;
+}
+
+.loader_dot_two {
+  animation: bouncing 0.3s 0.2s infinite alternate;
+}
+
+.loader_dot_three {
+  animation: bouncing 0.3s 0.3s infinite alternate;
+}
+
+.loader_dot_four {
+  animation: bouncing 0.3s 0.5s infinite alternate;
+}
+
+@keyframes bouncing {
+  from { top: 0px; }
+  to { top: -8px; }
+}
