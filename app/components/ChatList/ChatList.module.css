@@ -1,0 +1,5 @@
+.chat_list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+}
